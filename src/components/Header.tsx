@@ -8,6 +8,7 @@ const Header: React.FC = () => {
     { label: "Главная", href: "#" },
     { label: "О нас", href: "#founder" },
     { label: "Этапы запуска", href: "#steps" },
+    { label: "Финансовая модель", href: "#finmodel" },
     { label: "Тарифы", href: "#pricing" },
   ]
 

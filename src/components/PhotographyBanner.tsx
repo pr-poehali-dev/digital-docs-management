@@ -1568,7 +1568,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="finmodel-section">
+          <section className="finmodel-section" id="finmodel">
             <style>{`
               .finmodel-section {
                 padding: 100px 30px;
@@ -1774,6 +1774,26 @@ const PhotographyBanner: React.FC = () => {
                 <div className="finmodel-trend-text">
                   По прогнозам аналитиков, к 2030 году объём рынка частных домов ухода в России вырастет в <span>3–4 раза</span>. Те, кто зайдёт сейчас — займут лучшие позиции и сформируют лояльную клиентскую базу до прихода крупных игроков.
                 </div>
+              </div>
+
+              <div style={{marginTop:'60px', background:'#fff', borderRadius:'24px', padding:'48px 40px', boxShadow:'0 8px 40px rgba(10,45,143,0.08)', maxWidth:'560px', margin:'60px auto 0'}}>
+                <h3 style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'22px', color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'1px', marginBottom:'8px', marginTop:0}}>Хочу узнать больше</h3>
+                <p style={{fontFamily:"'Inter',sans-serif", fontSize:'15px', color:'#666', marginBottom:'28px', marginTop:0}}>Оставьте заявку — мы расскажем, как работает финансовая модель именно в вашем городе</p>
+                <form onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>ФИО</label>
+                    <input required value={formData.fio} onChange={e => setFormData({...formData, fio: e.target.value})} placeholder="Иванов Иван Иванович" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>Телефон</label>
+                    <input required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="+7 (___) ___-__-__" type="tel" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>E-mail</label>
+                    <input required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <button type="submit" style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'17px', fontWeight:700, cursor:'pointer', fontFamily:"'Montserrat',sans-serif", letterSpacing:'1px'}}>Отправить заявку</button>
+                </form>
               </div>
             </div>
           </section>
