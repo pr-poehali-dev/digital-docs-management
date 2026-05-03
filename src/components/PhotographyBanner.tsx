@@ -1288,7 +1288,7 @@ const PhotographyBanner: React.FC = () => {
                   <div className="pricing-name">Роскошный</div>
                   <div className="pricing-sub">Максимум</div>
                   <div className="pricing-price">2 400 000 <span className="pricing-currency">руб.</span></div>
-                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#f5ede0', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
@@ -1299,9 +1299,9 @@ const PhotographyBanner: React.FC = () => {
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
                   </ul>
-                  <div style={{margin:'16px 0 8px', padding:'16px', background:'rgba(255,255,255,0.15)', borderRadius:'12px', border:'2px solid rgba(255,255,255,0.4)'}}>
-                    <div style={{fontWeight:'600', fontSize:'15px', textTransform:'uppercase', letterSpacing:'2px', marginBottom:'10px', opacity:0.9, fontFamily:"'Cormorant Garamond', serif"}}>⭐ Только в этом тарифе</div>
-                    <ul style={{textAlign:'left', padding:'0', lineHeight:'2', fontSize:'17px', margin:0, color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                  <div style={{margin:'16px 0 8px', padding:'16px', background:'rgba(255,255,255,0.15)', borderRadius:'12px', border:'2px solid rgba(245,237,224,0.4)'}}>
+                    <div style={{fontWeight:'700', fontSize:'15px', textTransform:'uppercase', letterSpacing:'2px', marginBottom:'10px', color:'#f5ede0', fontFamily:"'Cormorant Garamond', serif"}}>⭐ Только в этом тарифе</div>
+                    <ul style={{textAlign:'left', padding:'0', lineHeight:'2', fontSize:'17px', margin:0, color:'#f5ede0', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                       <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>1 год личного сопровождения пансионата</li>
                       <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Персональный менеджер, который ответит на ваши вопросы</li>
                       <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Еженедельные онлайн видео-общения с руководителем</li>
