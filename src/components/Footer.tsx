@@ -409,42 +409,11 @@ export default function Footer() {
 
             <div className="footer-links">
               <div className="link-column">
-                <h3>О компании</h3>
+                <h3>Главная</h3>
                 <ul className="link-list">
                   {aboutLinks.map(({ text, href }) => (
                     <li key={text} className="link-item">
                       <a href={href}>{text}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="link-column">
-                <h3>Обучение</h3>
-                <ul className="link-list">
-                  {serviceLinks.map(({ text, href }) => (
-                    <li key={text} className="link-item">
-                      <a href={href}>{text}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="link-column">
-                <h3>Ресурсы</h3>
-                <ul className="link-list">
-                  {helpfulLinks.map(({ text, href, hasIndicator }) => (
-                    <li key={text} className="link-item">
-                      <a href={href}>
-                        {hasIndicator ? (
-                          <span className="live-indicator">
-                            {text}
-                            <span className="pulse-dot"></span>
-                          </span>
-                        ) : (
-                          text
-                        )}
-                      </a>
                     </li>
                   ))}
                 </ul>
