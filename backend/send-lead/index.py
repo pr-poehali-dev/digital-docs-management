@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 def handler(event: dict, context) -> dict:
-    """Отправка заявки с сайта на почту pas-do100let@gmail.com"""
+    """Отправка заявки с сайта на почту pas.do100let@gmail.com"""
     if event.get('httpMethod') == 'OPTIONS':
         return {
             'statusCode': 200,
@@ -32,7 +32,7 @@ def handler(event: dict, context) -> dict:
             'body': json.dumps({'error': 'Заполните обязательные поля'})
         }
 
-    smtp_user = 'pas-do100let@gmail.com'
+    smtp_user = 'pas.do100let@gmail.com'
     smtp_password = os.environ['SMTP_PASSWORD']
 
     msg = MIMEMultipart('alternative')
