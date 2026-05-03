@@ -155,7 +155,7 @@ const PhotographyBanner: React.FC = () => {
           border: 0;
           font-size: 56px;
           line-height: 1;
-          color: #1a1a2e;
+          color: #1a56db;
           letter-spacing: 0.25px;
           text-transform: uppercase;
           font-family: "Montserrat";
@@ -182,7 +182,7 @@ const PhotographyBanner: React.FC = () => {
           bottom: 6px;
           width: 100%;
           height: 3px;
-          background-color: #1a1a2e;
+          background-color: #1a56db;
           transform: scaleX(1);
           transition: transform 250ms ease-in-out;
           transform-origin: 0 0;
