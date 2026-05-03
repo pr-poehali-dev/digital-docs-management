@@ -147,10 +147,7 @@ const Header: React.FC = () => {
       <header className="site-header">
         <div className="header-inner">
           <a href="/" className="header-logo" style={{display:'flex', alignItems:'center', gap:'10px', textDecoration:'none'}}>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="38" height="38" rx="10" fill="#0a2d8f"/>
-              <path d="M19 7L10 13V31H16V22H22V31H28V13L19 7Z" fill="white"/>
-            </svg>
+            <img src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/bucket/6d165c1d-89d5-4c91-94ee-3c3013c5ea5a.jpg" alt="Логотип" width="38" height="38" style={{objectFit:'contain', borderRadius:'8px'}} />
             <span style={{display:'flex', flexDirection:'column', lineHeight:1.1}}>
               <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'13px', color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'1px'}}>Академия</span>
               <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'13px', color:'#e3000f', textTransform:'uppercase', letterSpacing:'1px'}}>«Как открыть пансионат»</span>
