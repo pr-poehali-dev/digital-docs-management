@@ -1163,7 +1163,7 @@ const PhotographyBanner: React.FC = () => {
                 overflow: hidden;
               }
               .pricing-card.basic {
-                background: #f5f0eb;
+                background: #fdf9f5;
                 border: 2px solid #e0d8d0;
               }
               .pricing-card.premium {
