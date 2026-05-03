@@ -103,7 +103,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .left-part h1 .text {
-          color: #d33682;
+          color: #1a56db;
           display: block;
           height: clamp(80px, 10vw, 120px);
           font-size: clamp(48px, 9vw, 120px);
@@ -843,7 +843,7 @@ const PhotographyBanner: React.FC = () => {
               <p className="tracking-widest">
                 Быстро и эффективно поможем открыть высокодоходный социальный бизнес — пансионат для пожилых в любом городе страны.
               </p>
-              <p style={{ color: "#d33682", fontFamily: "Montserrat", fontWeight: 700, fontSize: "36px", margin: "16px 0 0", letterSpacing: "1px" }}>
+              <p style={{ color: "#1a56db", fontFamily: "Montserrat", fontWeight: 700, fontSize: "36px", margin: "16px 0 0", letterSpacing: "1px" }}>
                 8-900-055-40-45
               </p>
               <a href="#cta" className="book-link">
