@@ -899,7 +899,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="features-section">
+          <section className="features-section" style={{display:'none'}}>
             <div className="features-container">
               <div className="features-content">
                 <h2>Что вы получите?</h2>
@@ -945,7 +945,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="testimonials-section">
+          <section className="testimonials-section" style={{display:'none'}}>
             <div className="testimonials-container">
               <h2 className="testimonials-title">Отзывы выпускников</h2>
               <div className="testimonials-marquee">
