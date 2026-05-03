@@ -83,7 +83,7 @@ const Header: React.FC = () => {
           font-size: 13px;
           font-weight: 700;
           color: #fff !important;
-          background: #0a2d8f;
+          background: #e3000f;
           padding: 10px 22px;
           border-radius: 50px;
           text-transform: uppercase;
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
           white-space: nowrap;
         }
         .header-cta:hover {
-          background: #1a56db !important;
+          background: #b80000 !important;
           color: #fff !important;
           transform: translateY(-1px);
         }
