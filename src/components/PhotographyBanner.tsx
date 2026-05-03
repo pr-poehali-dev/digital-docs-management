@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["ПАНСИОНАТ.", "БИЗНЕС."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -828,7 +828,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["О", "Т", "К", "Р", "О", "Й", " "].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Практическая академия для предпринимателей: от идеи до прибыльного пансионата для пожилых — пошагово, с наставником
               </p>
               <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+                <span className="linktext tracking-tighter text-3xl">Записаться на курс</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -888,42 +888,42 @@ const PhotographyBanner: React.FC = () => {
           <section className="features-section">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают нас?</h2>
+                <h2>Что вы получите?</h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>Готовая бизнес-модель</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Пошаговый план открытия пансионата: от выбора помещения и персонала до получения лицензии и первых клиентов
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>Юридическая база</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      Все документы, договоры и регламенты для легального ведения бизнеса по уходу за пожилыми
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Наставник из практики</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Обучение от действующих владельцев пансионатов — делятся реальным опытом и разбирают ваши кейсы
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Сообщество предпринимателей</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Закрытый чат выпускников, партнёрства и поддержка даже после окончания курса
                     </p>
                   </div>
                 </li>
@@ -933,77 +933,77 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="testimonials-section">
             <div className="testimonials-container">
-              <h2 className="testimonials-title">Отзывы клиентов</h2>
+              <h2 className="testimonials-title">Отзывы выпускников</h2>
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Открыла пансионат на 12 мест через 4 месяца после курса. Уже окупила вложения и думаю о расширении!"
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Владелец пансионата, Краснодар</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Боялся бюрократии и проверок. После обучения всё стало понятно — получил лицензию без единой ошибки."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">ИВ</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Игорь Волошин</h4>
+                      <p>Владелец пансионата, Ростов-на-Дону</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Курс дал всё: от поиска помещения до работы с семьями постояльцев. Уже 8 месяцев работаем в плюс."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ЕС</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Елена Соколова</h4>
+                      <p>Основатель пансионата, Самара</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Открыла пансионат на 12 мест через 4 месяца после курса. Уже окупила вложения и думаю о расширении!"
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">НП</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Наталья Петрова</h4>
+                      <p>Владелец пансионата, Краснодар</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Боялся бюрократии и проверок. После обучения всё стало понятно — получил лицензию без единой ошибки."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">ИВ</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Игорь Волошин</h4>
+                      <p>Владелец пансионата, Ростов-на-Дону</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Курс дал всё: от поиска помещения до работы с семьями постояльцев. Уже 8 месяцев работаем в плюс."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ЕС</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Елена Соколова</h4>
+                      <p>Основатель пансионата, Самара</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1013,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Готовы открыть свой пансионат?</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Присоединяйтесь к выпускникам, которые уже открыли прибыльный бизнес по уходу за пожилыми. Следующий поток стартует скоро!
               </p>
               <div className="cta-buttons">
                 <a href="#" className="cta-button">
-                  Обсудить проект
+                  Записаться на курс
                 </a>
                 <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                  Узнать программу
                 </a>
               </div>
             </div>
