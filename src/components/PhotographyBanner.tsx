@@ -1293,6 +1293,7 @@ const PhotographyBanner: React.FC = () => {
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем все работы по СанПИН и пожарным требованиям</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Юридически правильно составим договор купли-продажи или договор аренды на объект недвижимости, в котором будет пансионат</li>
                   </ul>
                   <button onClick={() => setShowModal(true)} className="pricing-btn">Оставить заявку</button>
                 </div>
@@ -1311,6 +1312,7 @@ const PhotographyBanner: React.FC = () => {
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем все работы по СанПИН и пожарным требованиям</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Юридически правильно составим договор купли-продажи или договор аренды на объект недвижимости, в котором будет пансионат</li>
                   </ul>
                   <div style={{margin:'16px 0 8px', padding:'16px', background:'rgba(255,255,255,0.15)', borderRadius:'12px', border:'2px solid rgba(245,237,224,0.4)'}}>
                     <div style={{fontWeight:'700', fontSize:'15px', textTransform:'uppercase', letterSpacing:'2px', marginBottom:'10px', color:'#f5ede0', fontFamily:"'Cormorant Garamond', serif"}}>⭐ Только в этом тарифе</div>
