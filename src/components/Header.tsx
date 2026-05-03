@@ -133,7 +133,17 @@ const Header: React.FC = () => {
       `}</style>
       <header className="site-header">
         <div className="header-inner">
-          <a href="/" className="header-logo">Академия<br/><span>пансионата</span></a>
+          <a href="/" className="header-logo" style={{display:'flex', alignItems:'center', gap:'10px', textDecoration:'none'}}>
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="38" height="38" rx="10" fill="#0a2d8f"/>
+              <path d="M19 7L10 13V31H16V22H22V31H28V13L19 7Z" fill="white"/>
+              <circle cx="19" cy="15" r="3" fill="#e3000f"/>
+            </svg>
+            <span style={{display:'flex', flexDirection:'column', lineHeight:1.1}}>
+              <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'14px', color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'1px'}}>Академия</span>
+              <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'14px', color:'#e3000f', textTransform:'uppercase', letterSpacing:'1px'}}>пансионата</span>
+            </span>
+          </a>
           <nav className="header-nav">
             {links.map(l => (
               <a key={l.label} href={l.href}>{l.label}</a>
