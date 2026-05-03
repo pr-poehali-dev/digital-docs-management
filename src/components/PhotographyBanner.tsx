@@ -1270,16 +1270,16 @@ const PhotographyBanner: React.FC = () => {
                   <div className="pricing-name">Базовый</div>
                   <div className="pricing-sub">Минимум</div>
                   <div className="pricing-price">1 200 000 <span className="pricing-currency">руб.</span></div>
-                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0 0 0 18px', lineHeight:'1.8', fontSize:'14px', color:'inherit'}}>
-                    <li>Сделаем подробный бизнес план</li>
-                    <li>Оценим финансовые вложения и прогнозируем прибыль</li>
-                    <li>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
-                    <li>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
-                    <li>Организуем дополнительные потоки доходов</li>
-                    <li>Приедем в Ваш город для осмотра объекта, где планируется открытие пансионата</li>
-                    <li>Организуем все работы по СанПИН и пожарным требованиям</li>
-                    <li>Проведём обучение Вашего персонала</li>
-                    <li>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
+                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем дополнительные потоки доходов</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Приедем в Ваш город для осмотра объекта, где планируется открытие пансионата</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем все работы по СанПИН и пожарным требованиям</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
                   </ul>
                   <a href="#" className="pricing-btn">Оставить заявку</a>
                 </div>
@@ -1288,23 +1288,23 @@ const PhotographyBanner: React.FC = () => {
                   <div className="pricing-name">Роскошный</div>
                   <div className="pricing-sub">Максимум</div>
                   <div className="pricing-price">2 400 000 <span className="pricing-currency">руб.</span></div>
-                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0 0 0 18px', lineHeight:'1.8', fontSize:'14px', color:'inherit'}}>
-                    <li>Сделаем подробный бизнес план</li>
-                    <li>Оценим финансовые вложения и прогнозируем прибыль</li>
-                    <li>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
-                    <li>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
-                    <li>Организуем дополнительные потоки доходов</li>
-                    <li>Приедем в Ваш город для осмотра объекта, где планируется открытие пансионата</li>
-                    <li>Организуем все работы по СанПИН и пожарным требованиям</li>
-                    <li>Проведём обучение Вашего персонала</li>
-                    <li>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
+                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем дополнительные потоки доходов</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Приедем в Ваш город для осмотра объекта, где планируется открытие пансионата</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем все работы по СанПИН и пожарным требованиям</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
                   </ul>
                   <div style={{margin:'16px 0 8px', padding:'16px', background:'rgba(255,255,255,0.15)', borderRadius:'12px', border:'2px solid rgba(255,255,255,0.4)'}}>
-                    <div style={{fontWeight:'700', fontSize:'13px', textTransform:'uppercase', letterSpacing:'1px', marginBottom:'10px', opacity:0.9}}>⭐ Только в этом тарифе</div>
-                    <ul style={{textAlign:'left', padding:'0 0 0 18px', lineHeight:'1.8', fontSize:'14px', margin:0, color:'inherit'}}>
-                      <li>1 год личного сопровождения пансионата</li>
-                      <li>Персональный менеджер, который ответит на ваши вопросы</li>
-                      <li>Еженедельные онлайн видео-общения с руководителем</li>
+                    <div style={{fontWeight:'600', fontSize:'15px', textTransform:'uppercase', letterSpacing:'2px', marginBottom:'10px', opacity:0.9, fontFamily:"'Cormorant Garamond', serif"}}>⭐ Только в этом тарифе</div>
+                    <ul style={{textAlign:'left', padding:'0', lineHeight:'2', fontSize:'17px', margin:0, color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                      <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>1 год личного сопровождения пансионата</li>
+                      <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Персональный менеджер, который ответит на ваши вопросы</li>
+                      <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Еженедельные онлайн видео-общения с руководителем</li>
                     </ul>
                   </div>
                   <a href="#" className="pricing-btn">Оставить заявку</a>
