@@ -883,7 +883,7 @@ const PhotographyBanner: React.FC = () => {
                 />
               </div>
               <img
-                src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/74c6716c-3908-481a-9f71-a9251f5ac0be.jpg"
+                src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/6063a1dc-091e-4ee3-a0f0-10c4192fafd1.jpg"
                 alt="Пансионат для пожилых"
                 className="hero-image"
               />
