@@ -1268,10 +1268,11 @@ const PhotographyBanner: React.FC = () => {
                 margin: 0 0 32px;
               }
               .founder-text {
-                font-family: "Inter", sans-serif;
-                font-size: 16px;
-                color: #444;
-                line-height: 1.9;
+                font-family: "Cormorant Garamond", serif;
+                font-size: 20px;
+                font-weight: 600;
+                color: #1a1a2e;
+                line-height: 1.8;
                 margin: 0 0 20px;
               }
               .founder-badge {
