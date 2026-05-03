@@ -1287,7 +1287,7 @@ const PhotographyBanner: React.FC = () => {
                   <div className="pricing-badge">Хит</div>
                   <div className="pricing-name">Роскошный</div>
                   <div className="pricing-sub">Максимум</div>
-                  <div className="pricing-price">2 400 000 <span className="pricing-currency">руб.</span></div>
+                  <div className="pricing-price">2 300 000 <span className="pricing-currency">руб.</span></div>
                   <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#f5ede0', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
