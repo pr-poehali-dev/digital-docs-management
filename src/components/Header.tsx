@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 
   const links = [
     { label: "Главная", href: "#" },
-    { label: "О руководителе", href: "#founder" },
+    { label: "О нас", href: "#founder" },
     { label: "Этапы запуска", href: "#steps" },
     { label: "Тарифы", href: "#pricing" },
   ]

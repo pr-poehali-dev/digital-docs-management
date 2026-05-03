@@ -1342,7 +1342,7 @@ const PhotographyBanner: React.FC = () => {
             `}</style>
             <div className="founder-container">
               <div>
-                <div className="founder-label">О руководителе</div>
+                <div className="founder-label">О нас</div>
                 <h2 className="founder-title"><span>Маньянов Ринат Хамитович</span></h2>
                 <div className="founder-role">Основатель и руководитель</div>
                 <p className="founder-text">
