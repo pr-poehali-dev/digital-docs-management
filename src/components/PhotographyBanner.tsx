@@ -1042,7 +1042,7 @@ const PhotographyBanner: React.FC = () => {
             <style>{`
               .steps-section {
                 padding: 100px 30px;
-                background-color: #f5f0eb;
+                background-color: #0a2d8f;
                 position: relative;
               }
               .steps-container {
@@ -1053,13 +1053,13 @@ const PhotographyBanner: React.FC = () => {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: clamp(36px, 6vw, 72px);
-                color: #0a2d8f;
+                color: #fff;
                 text-transform: uppercase;
                 margin: 0 0 60px;
                 line-height: 1;
               }
               .steps-title span {
-                color: #e3000f;
+                color: #d33682;
               }
               .steps-grid {
                 display: grid;

@@ -468,7 +468,7 @@ export default function Footer() {
 
           <div className="footer-bottom">
             <p className="copyright">
-              © 2025 Академия пансионата. Все права защищены.
+              © {new Date().getFullYear()} Маньянов Ринат Хамитович. Все права защищены.
             </p>
             <div className="footer-legal">
               <a href="/privacy">Политика конфиденциальности</a>
