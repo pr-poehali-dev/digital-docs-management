@@ -1182,8 +1182,8 @@ const PhotographyBanner: React.FC = () => {
                 margin-bottom: 24px;
               }
               .pricing-card.basic .pricing-badge {
-                background: #1a6fba;
-                color: #fff;
+                background: #e0d8d0;
+                color: #555;
               }
               .pricing-card.premium .pricing-badge {
                 background: #e3000f;
