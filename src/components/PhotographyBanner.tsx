@@ -842,7 +842,7 @@ const PhotographyBanner: React.FC = () => {
                 </span>
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
-              <p className="tracking-widest">
+              <p className="tracking-widest" style={{ fontWeight: 700 }}>
                 Быстро и эффективно поможем открыть высокодоходный социальный бизнес — пансионат для пожилых в любом городе страны.
               </p>
               <p style={{ color: "#e3000f", fontFamily: "Montserrat", fontWeight: 700, fontSize: "36px", margin: "16px 0 0", letterSpacing: "1px" }}>
