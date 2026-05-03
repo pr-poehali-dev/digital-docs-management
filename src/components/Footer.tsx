@@ -401,13 +401,7 @@ export default function Footer() {
                 <span className="brand-name">{data.company.name}</span>
               </div>
               <p className="brand-description">{data.company.description}</p>
-              <div className="social-links">
-                {socialLinks.map(({ icon: Icon, label, href }) => (
-                  <a key={label} href={href} className="social-link" aria-label={label}>
-                    <Icon size={20} />
-                  </a>
-                ))}
-              </div>
+
             </div>
 
             <div className="footer-links">
