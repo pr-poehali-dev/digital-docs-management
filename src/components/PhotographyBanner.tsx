@@ -115,7 +115,7 @@ const PhotographyBanner: React.FC = () => {
           font-size: clamp(56px, 10vw, 134px);
           display: flex;
           align-items: center;
-          color: #000000;
+          color: #1a56db;
           margin-bottom: 16px;
         }
 
