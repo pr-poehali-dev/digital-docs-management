@@ -847,7 +847,7 @@ const PhotographyBanner: React.FC = () => {
                 8-900-055-40-45
               </p>
               <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Записаться на курс</span>
+                <span className="linktext tracking-tighter text-3xl">Оставить заявку</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -1031,7 +1031,7 @@ const PhotographyBanner: React.FC = () => {
               </p>
               <div className="cta-buttons">
                 <a href="#" className="cta-button">
-                  Записаться на курс
+                  Оставить заявку
                 </a>
                 <a href="#" className="cta-button secondary">
                   Узнать программу
