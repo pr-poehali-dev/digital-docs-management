@@ -1568,6 +1568,213 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
+          <section className="finmodel-section">
+            <style>{`
+              .finmodel-section {
+                padding: 100px 30px;
+                background: #0a2d8f;
+                position: relative;
+                overflow: hidden;
+              }
+              .finmodel-section::before {
+                content: "";
+                position: absolute;
+                bottom: -100px; right: -100px;
+                width: 500px; height: 500px;
+                background: rgba(227,0,15,0.12);
+                border-radius: 50%;
+                filter: blur(100px);
+                z-index: 0;
+              }
+              .finmodel-container {
+                max-width: 1100px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+              }
+              .finmodel-label {
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: #e3000f;
+                margin-bottom: 16px;
+              }
+              .finmodel-title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: clamp(32px, 5vw, 60px);
+                color: #fff;
+                line-height: 1.1;
+                margin: 0 0 16px;
+                text-transform: uppercase;
+              }
+              .finmodel-title span { color: #e3000f; }
+              .finmodel-subtitle {
+                font-family: "Montserrat", sans-serif;
+                font-size: 17px;
+                color: rgba(255,255,255,0.65);
+                margin: 0 0 60px;
+                max-width: 700px;
+                line-height: 1.7;
+              }
+              .finmodel-stats {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+                margin-bottom: 60px;
+              }
+              .finmodel-stat {
+                background: rgba(255,255,255,0.07);
+                border: 1px solid rgba(255,255,255,0.12);
+                border-radius: 20px;
+                padding: 32px 24px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              }
+              .finmodel-stat:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+              }
+              .finmodel-stat-num {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: clamp(32px, 4vw, 48px);
+                color: #e3000f;
+                line-height: 1;
+                margin-bottom: 10px;
+              }
+              .finmodel-stat-desc {
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                color: rgba(255,255,255,0.7);
+                line-height: 1.5;
+              }
+              .finmodel-cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+              }
+              .finmodel-card {
+                background: rgba(255,255,255,0.07);
+                border: 1px solid rgba(255,255,255,0.12);
+                border-radius: 20px;
+                padding: 36px 32px;
+                transition: transform 0.3s ease;
+              }
+              .finmodel-card:hover { transform: translateY(-4px); }
+              .finmodel-card-icon { font-size: 36px; margin-bottom: 14px; }
+              .finmodel-card-title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 12px;
+              }
+              .finmodel-card-text {
+                font-family: "Inter", sans-serif;
+                font-size: 15px;
+                color: rgba(255,255,255,0.65);
+                line-height: 1.8;
+              }
+              .finmodel-card-text strong { color: #fff; }
+              .finmodel-trend {
+                margin-top: 48px;
+                background: rgba(227,0,15,0.1);
+                border: 1px solid rgba(227,0,15,0.3);
+                border-radius: 20px;
+                padding: 32px 36px;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+              }
+              .finmodel-trend-icon { font-size: 48px; flex-shrink: 0; }
+              .finmodel-trend-text {
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+                line-height: 1.6;
+              }
+              .finmodel-trend-text span { color: #e3000f; }
+              @media (max-width: 900px) {
+                .finmodel-stats { grid-template-columns: repeat(2, 1fr); }
+                .finmodel-cards { grid-template-columns: 1fr; }
+              }
+              @media (max-width: 560px) {
+                .finmodel-section { padding: 60px 16px; }
+                .finmodel-stats { grid-template-columns: 1fr 1fr; }
+                .finmodel-trend { flex-direction: column; text-align: center; }
+              }
+            `}</style>
+            <div className="finmodel-container">
+              <div className="finmodel-label">Финансовая модель</div>
+              <h2 className="finmodel-title">Рынок, который <span>растёт</span></h2>
+              <p className="finmodel-subtitle">
+                Россия входит в число стран с самым быстрым старением населения. Спрос на профессиональный уход за пожилыми людьми кратно превышает предложение — и этот разрыв будет только расти.
+              </p>
+
+              <div className="finmodel-stats">
+                <div className="finmodel-stat">
+                  <div className="finmodel-stat-num">38 млн</div>
+                  <div className="finmodel-stat-desc">россиян старше 60 лет — каждый четвёртый житель страны</div>
+                </div>
+                <div className="finmodel-stat">
+                  <div className="finmodel-stat-num">+12%</div>
+                  <div className="finmodel-stat-desc">ежегодный рост числа людей старшего возраста по данным Росстата</div>
+                </div>
+                <div className="finmodel-stat">
+                  <div className="finmodel-stat-num">от 150 тыс.</div>
+                  <div className="finmodel-stat-desc">рублей в месяц — средний доход пансионата на 10–15 мест</div>
+                </div>
+                <div className="finmodel-stat">
+                  <div className="finmodel-stat-num">12–18 мес.</div>
+                  <div className="finmodel-stat-desc">средний срок окупаемости частного пансионата при грамотном запуске</div>
+                </div>
+              </div>
+
+              <div className="finmodel-cards">
+                <div className="finmodel-card">
+                  <div className="finmodel-card-icon">📈</div>
+                  <div className="finmodel-card-title">Дефицит мест</div>
+                  <div className="finmodel-card-text">
+                    По оценкам экспертов, государственные учреждения покрывают менее <strong>10% потребности</strong> в уходе за пожилыми. Частные пансионаты заполняются в течение <strong>1–2 недель</strong> после открытия.
+                  </div>
+                </div>
+                <div className="finmodel-card">
+                  <div className="finmodel-card-icon">💰</div>
+                  <div className="finmodel-card-title">Стабильный доход</div>
+                  <div className="finmodel-card-text">
+                    Средний чек за проживание в частном пансионате — <strong>40 000–80 000 руб./мес.</strong> Пансионат на 15 мест приносит <strong>от 600 000 руб.</strong> выручки ежемесячно.
+                  </div>
+                </div>
+                <div className="finmodel-card">
+                  <div className="finmodel-card-icon">🏙️</div>
+                  <div className="finmodel-card-title">Работает в любом городе</div>
+                  <div className="finmodel-card-text">
+                    Спрос есть как в мегаполисах, так и в городах с населением <strong>от 100 000 человек.</strong> Конкуренция минимальна — рынок только формируется.
+                  </div>
+                </div>
+                <div className="finmodel-card">
+                  <div className="finmodel-card-icon">🤝</div>
+                  <div className="finmodel-card-title">Социальная значимость</div>
+                  <div className="finmodel-card-text">
+                    Государство поддерживает развитие частных домов ухода: <strong>налоговые льготы, субсидии</strong> и программы развития социального предпринимательства действуют во многих регионах.
+                  </div>
+                </div>
+              </div>
+
+              <div className="finmodel-trend">
+                <div className="finmodel-trend-icon">🚀</div>
+                <div className="finmodel-trend-text">
+                  По прогнозам аналитиков, к 2030 году объём рынка частных домов ухода в России вырастет в <span>3–4 раза</span>. Те, кто зайдёт сейчас — займут лучшие позиции и сформируют лояльную клиентскую базу до прихода крупных игроков.
+                </div>
+              </div>
+            </div>
+          </section>
+
         </main>
       </div>
 
