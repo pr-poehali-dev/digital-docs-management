@@ -1114,6 +1114,175 @@ const PhotographyBanner: React.FC = () => {
           </section>
 
 
+          <section className="pricing-section">
+            <style>{`
+              .pricing-section {
+                padding: 100px 30px;
+                background-color: #fff;
+                position: relative;
+                overflow: hidden;
+              }
+              .pricing-section::before {
+                content: "";
+                position: absolute;
+                top: -100px;
+                left: -100px;
+                width: 400px;
+                height: 400px;
+                background: rgba(26, 86, 219, 0.06);
+                border-radius: 50%;
+                z-index: 0;
+              }
+              .pricing-container {
+                max-width: 1000px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 1;
+              }
+              .pricing-title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: clamp(36px, 6vw, 72px);
+                color: #0a2d8f;
+                text-transform: uppercase;
+                margin: 0 0 60px;
+                line-height: 1;
+              }
+              .pricing-title span {
+                color: #e3000f;
+              }
+              .pricing-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+              }
+              .pricing-card {
+                border-radius: 24px;
+                padding: 48px 40px;
+                position: relative;
+                overflow: hidden;
+              }
+              .pricing-card.basic {
+                background: #f5f0eb;
+                border: 2px solid #e0d8d0;
+              }
+              .pricing-card.premium {
+                background: #0a2d8f;
+                border: 2px solid #0a2d8f;
+              }
+              .pricing-badge {
+                display: inline-block;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                padding: 6px 16px;
+                border-radius: 20px;
+                margin-bottom: 24px;
+              }
+              .pricing-card.basic .pricing-badge {
+                background: #e0d8d0;
+                color: #555;
+              }
+              .pricing-card.premium .pricing-badge {
+                background: #e3000f;
+                color: #fff;
+              }
+              .pricing-name {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 28px;
+                text-transform: uppercase;
+                margin: 0 0 8px;
+              }
+              .pricing-card.basic .pricing-name { color: #1a1a2e; }
+              .pricing-card.premium .pricing-name { color: #fff; }
+              .pricing-sub {
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin: 0 0 32px;
+              }
+              .pricing-card.basic .pricing-sub { color: #888; }
+              .pricing-card.premium .pricing-sub { color: rgba(255,255,255,0.6); }
+              .pricing-price {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: clamp(32px, 4vw, 48px);
+                margin: 0 0 8px;
+                line-height: 1;
+              }
+              .pricing-card.basic .pricing-price { color: #0a2d8f; }
+              .pricing-card.premium .pricing-price { color: #fff; }
+              .pricing-currency {
+                font-size: 20px;
+                font-weight: 400;
+              }
+              .pricing-btn {
+                display: inline-block;
+                margin-top: 36px;
+                padding: 16px 36px;
+                border-radius: 50px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: none;
+              }
+              .pricing-card.basic .pricing-btn {
+                background: #0a2d8f;
+                color: #fff;
+              }
+              .pricing-card.basic .pricing-btn:hover {
+                background: #1a56db;
+              }
+              .pricing-card.premium .pricing-btn {
+                background: #e3000f;
+                color: #fff;
+              }
+              .pricing-card.premium .pricing-btn:hover {
+                background: #ff1a1a;
+              }
+              @media (max-width: 700px) {
+                .pricing-grid {
+                  grid-template-columns: 1fr;
+                }
+                .pricing-section {
+                  padding: 60px 16px;
+                }
+                .pricing-card {
+                  padding: 36px 24px;
+                }
+              }
+            `}</style>
+            <div className="pricing-container">
+              <h2 className="pricing-title">Наши <span>тарифы</span></h2>
+              <div className="pricing-grid">
+                <div className="pricing-card basic">
+                  <div className="pricing-badge">Старт</div>
+                  <div className="pricing-name">Базовый</div>
+                  <div className="pricing-sub">Минимум</div>
+                  <div className="pricing-price">1 200 000 <span className="pricing-currency">руб.</span></div>
+                  <a href="#" className="pricing-btn">Оставить заявку</a>
+                </div>
+                <div className="pricing-card premium">
+                  <div className="pricing-badge">Хит</div>
+                  <div className="pricing-name">Роскошный</div>
+                  <div className="pricing-sub">Максимум</div>
+                  <div className="pricing-price">2 400 000 <span className="pricing-currency">руб.</span></div>
+                  <a href="#" className="pricing-btn">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
         </main>
       </div>
     </>
