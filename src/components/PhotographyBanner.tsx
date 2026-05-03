@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["ПАНСИОНАТ.", "БИЗНЕС."]
+  const texts = ["ПАНСИОНАТ", "БИЗНЕС"]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
