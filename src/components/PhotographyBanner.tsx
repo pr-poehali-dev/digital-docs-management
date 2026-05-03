@@ -1113,22 +1113,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="cta-section" id="cta">
-            <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы открыть свой пансионат?</h2>
-              <p className="cta-subtitle">
-                Присоединяйтесь к выпускникам, которые уже открыли прибыльный бизнес по уходу за пожилыми. Следующий поток стартует скоро!
-              </p>
-              <div className="cta-buttons">
-                <a href="#" className="cta-button">
-                  Оставить заявку
-                </a>
-                <a href="#" className="cta-button secondary">
-                  Узнать программу
-                </a>
-              </div>
-            </div>
-          </section>
+
         </main>
       </div>
     </>
