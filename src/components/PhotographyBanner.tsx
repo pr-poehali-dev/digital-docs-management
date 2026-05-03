@@ -1286,6 +1286,7 @@ const PhotographyBanner: React.FC = () => {
                   <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#1a5c2e', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Создадим логотип по вашему названию и поможем с регистрацией товарного знака</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем дополнительные потоки доходов</li>
@@ -1305,6 +1306,7 @@ const PhotographyBanner: React.FC = () => {
                   <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#f5ede0', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
+                    <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Создадим логотип по вашему названию и поможем с регистрацией товарного знака</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем маркетинговую стратегию (чтобы получить максимальное количество постояльцев)</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Организуем дополнительные потоки доходов</li>
