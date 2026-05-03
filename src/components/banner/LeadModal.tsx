@@ -43,6 +43,12 @@ const LeadModal: React.FC<LeadModalProps> = ({ formData, submitted, onClose, onS
                 <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>E-mail</label>
                 <input required value={formData.email} onChange={e => onChangeFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
               </div>
+              <label style={{display:'flex', alignItems:'flex-start', gap:'10px', cursor:'pointer'}}>
+                <input required type="checkbox" style={{marginTop:'3px', width:'16px', height:'16px', flexShrink:0, accentColor:'#0a2d8f', cursor:'pointer'}} />
+                <span style={{fontSize:'12px', color:'#777', lineHeight:'1.5'}}>
+                  Даю добровольное согласие на обработку персональных данных в соответствии с ФЗ № 152 и политикой конфиденциальности
+                </span>
+              </label>
               <button type="submit" style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'17px', fontWeight:700, cursor:'pointer', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'1px'}}>Отправить</button>
             </form>
           </>
