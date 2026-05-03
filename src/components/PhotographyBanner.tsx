@@ -861,12 +861,12 @@ const PhotographyBanner: React.FC = () => {
               <p style={{ color: "#e3000f", fontFamily: "Montserrat", fontWeight: 700, fontSize: "36px", margin: "16px 0 0", letterSpacing: "1px" }}>
                 8-900-055-40-45
               </p>
-              <a href="#cta" className="book-link">
+              <button onClick={() => setShowModal(true)} className="book-link" style={{background:'none', border:'none', cursor:'pointer', padding:0}}>
                 <span className="linktext tracking-tighter text-3xl">Оставить заявку</span>
                 <span className="arrow">
                   <span></span>
                 </span>
-              </a>
+              </button>
             </div>
             <div className="right-part">
               <div className="particles-container">
