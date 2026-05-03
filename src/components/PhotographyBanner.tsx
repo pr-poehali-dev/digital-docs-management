@@ -1127,6 +1127,162 @@ const PhotographyBanner: React.FC = () => {
           </section>
 
 
+          <section className="founder-section">
+            <style>{`
+              .founder-section {
+                padding: 100px 30px;
+                background-color: #073642;
+                position: relative;
+                overflow: hidden;
+              }
+              .founder-section::before {
+                content: "";
+                position: absolute;
+                top: -80px;
+                right: -80px;
+                width: 400px;
+                height: 400px;
+                background: rgba(211,54,130,0.15);
+                border-radius: 50%;
+                filter: blur(80px);
+                z-index: 0;
+              }
+              .founder-container {
+                max-width: 1100px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+              }
+              .founder-label {
+                font-family: "Montserrat", sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: #d33682;
+                margin-bottom: 20px;
+              }
+              .founder-title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: clamp(28px, 4vw, 48px);
+                color: #fff;
+                line-height: 1.1;
+                margin: 0 0 8px;
+              }
+              .founder-title span {
+                color: #d33682;
+              }
+              .founder-role {
+                font-family: "Montserrat", sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                color: rgba(255,255,255,0.5);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin: 0 0 32px;
+              }
+              .founder-text {
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                color: rgba(255,255,255,0.8);
+                line-height: 1.9;
+                margin: 0 0 20px;
+              }
+              .founder-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                background: rgba(211,54,130,0.15);
+                border: 1px solid rgba(211,54,130,0.4);
+                border-radius: 50px;
+                padding: 12px 24px;
+                margin-top: 8px;
+              }
+              .founder-badge-icon {
+                font-size: 24px;
+              }
+              .founder-badge-text {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 15px;
+                color: #d33682;
+              }
+              .founder-video-wrap {
+                position: relative;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+                background: #000;
+                aspect-ratio: 16/9;
+              }
+              .founder-video-wrap iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+                display: block;
+              }
+              .founder-video-placeholder {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(135deg, #0a2d8f 0%, #073642 100%);
+                color: rgba(255,255,255,0.4);
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                gap: 12px;
+                min-height: 280px;
+                border-radius: 20px;
+                border: 2px dashed rgba(255,255,255,0.15);
+              }
+              .founder-video-placeholder-icon {
+                font-size: 48px;
+                opacity: 0.5;
+              }
+              @media (max-width: 900px) {
+                .founder-container {
+                  grid-template-columns: 1fr;
+                  gap: 40px;
+                }
+              }
+              @media (max-width: 560px) {
+                .founder-section {
+                  padding: 60px 16px;
+                }
+              }
+            `}</style>
+            <div className="founder-container">
+              <div>
+                <div className="founder-label">О руководителе</div>
+                <h2 className="founder-title">Маньянов Ринат <span>Хамитович</span></h2>
+                <div className="founder-role">Основатель и руководитель</div>
+                <p className="founder-text">
+                  Ринат Хамитович — создатель и идейный вдохновитель компании. Более <strong style={{color:'#fff'}}>10 лет</strong> он посвятил развитию социального бизнеса в сфере ухода за пожилыми людьми.
+                </p>
+                <p className="founder-text">
+                  За это время под его руководством были открыты десятки пансионатов по всей стране. Он лично знает каждый этап запуска — от поиска помещения до первого постояльца — и передаёт этот опыт своим клиентам.
+                </p>
+                <div className="founder-badge">
+                  <span className="founder-badge-icon">🏆</span>
+                  <span className="founder-badge-text">Более 10 лет в сфере пансионатов</span>
+                </div>
+              </div>
+              <div className="founder-video-wrap">
+                <div className="founder-video-placeholder">
+                  <span className="founder-video-placeholder-icon">▶</span>
+                  <span>Вставьте ссылку на видео</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="pricing-section">
             <style>{`
               .pricing-section {
