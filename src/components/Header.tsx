@@ -127,6 +127,8 @@ const Header: React.FC = () => {
           background: none;
           border: none;
           padding: 4px;
+          position: relative;
+          z-index: 1100;
         }
         .header-burger span {
           display: block;
@@ -142,6 +144,8 @@ const Header: React.FC = () => {
           background: rgba(245,240,235,0.98);
           padding: 16px 30px 24px;
           border-top: 1px solid rgba(10,45,143,0.08);
+          position: relative;
+          z-index: 1050;
         }
         .mobile-menu.open {
           display: flex;
