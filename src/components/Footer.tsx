@@ -70,7 +70,10 @@ export default function Footer() {
     <>
       <style>{`
         .ai-footer {
-          background-color: #073642;
+          background-color: #f5f0eb;
+          background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
+          background-size: cover;
+          background-repeat: no-repeat;
           position: relative;
           overflow: hidden;
         }
@@ -148,7 +151,7 @@ export default function Footer() {
           font-family: "Montserrat", sans-serif;
           font-weight: 700;
           font-size: 28px;
-          color: #ffffff;
+          color: #0a2d8f;
           text-transform: uppercase;
         }
 
@@ -156,7 +159,7 @@ export default function Footer() {
           font-family: "Montserrat";
           font-size: 16px;
           line-height: 1.8;
-          color: #aaa;
+          color: #555;
           margin-bottom: 40px;
           max-width: 400px;
         }
@@ -169,8 +172,8 @@ export default function Footer() {
         .social-link {
           width: 45px;
           height: 45px;
-          background: rgba(227,0,15, 0.1);
-          border: 1px solid #333;
+          background: rgba(227,0,15,0.1);
+          border: 1px solid rgba(10,45,143,0.15);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -215,7 +218,7 @@ export default function Footer() {
         .link-item a {
           font-family: "Montserrat";
           font-size: 14px;
-          color: #aaa;
+          color: #555;
           text-decoration: none;
           transition: color 0.3s ease;
           display: flex;
@@ -224,7 +227,7 @@ export default function Footer() {
         }
 
         .link-item a:hover {
-          color: #ffffff;
+          color: #0a2d8f;
         }
 
         .contact-item {
@@ -288,7 +291,7 @@ export default function Footer() {
         }
 
         .footer-bottom {
-          border-top: 1px solid #333;
+          border-top: 1px solid rgba(10,45,143,0.12);
           padding-top: 30px;
           display: flex;
           justify-content: space-between;
@@ -300,7 +303,7 @@ export default function Footer() {
         .copyright {
           font-family: "Montserrat";
           font-size: 14px;
-          color: #aaa;
+          color: #888;
         }
 
         .copyright a {
@@ -310,7 +313,7 @@ export default function Footer() {
         }
 
         .copyright a:hover {
-          color: #ffffff;
+          color: #0a2d8f;
         }
 
         .footer-legal {
@@ -321,13 +324,13 @@ export default function Footer() {
         .footer-legal a {
           font-family: "Montserrat";
           font-size: 14px;
-          color: #aaa;
+          color: #888;
           text-decoration: none;
           transition: color 0.3s ease;
         }
 
         .footer-legal a:hover {
-          color: #ffffff;
+          color: #0a2d8f;
         }
 
         @media screen and (max-width: 1199px) {
