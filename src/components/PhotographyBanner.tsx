@@ -1572,7 +1572,10 @@ const PhotographyBanner: React.FC = () => {
             <style>{`
               .finmodel-section {
                 padding: 100px 30px;
-                background: #0a2d8f;
+                background-color: #f5f0eb;
+                background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
+                background-size: cover;
+                background-repeat: no-repeat;
                 position: relative;
                 overflow: hidden;
               }
@@ -1605,7 +1608,7 @@ const PhotographyBanner: React.FC = () => {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: clamp(32px, 5vw, 60px);
-                color: #fff;
+                color: #0a2d8f;
                 line-height: 1.1;
                 margin: 0 0 16px;
                 text-transform: uppercase;
@@ -1614,7 +1617,7 @@ const PhotographyBanner: React.FC = () => {
               .finmodel-subtitle {
                 font-family: "Montserrat", sans-serif;
                 font-size: 17px;
-                color: rgba(255,255,255,0.65);
+                color: #555;
                 margin: 0 0 60px;
                 max-width: 700px;
                 line-height: 1.7;
@@ -1626,8 +1629,8 @@ const PhotographyBanner: React.FC = () => {
                 margin-bottom: 60px;
               }
               .finmodel-stat {
-                background: rgba(255,255,255,0.07);
-                border: 1px solid rgba(255,255,255,0.12);
+                background: #fff;
+                border: 1px solid rgba(10,45,143,0.1);
                 border-radius: 20px;
                 padding: 32px 24px;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1647,7 +1650,7 @@ const PhotographyBanner: React.FC = () => {
               .finmodel-stat-desc {
                 font-family: "Montserrat", sans-serif;
                 font-size: 14px;
-                color: rgba(255,255,255,0.7);
+                color: #666;
                 line-height: 1.5;
               }
               .finmodel-cards {
@@ -1656,19 +1659,19 @@ const PhotographyBanner: React.FC = () => {
                 gap: 24px;
               }
               .finmodel-card {
-                background: rgba(255,255,255,0.07);
-                border: 1px solid rgba(255,255,255,0.12);
+                background: #fff;
+                border: 1px solid rgba(10,45,143,0.1);
                 border-radius: 20px;
                 padding: 36px 32px;
-                transition: transform 0.3s ease;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
               }
-              .finmodel-card:hover { transform: translateY(-4px); }
+              .finmodel-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(10,45,143,0.1); }
               .finmodel-card-icon { font-size: 36px; margin-bottom: 14px; }
               .finmodel-card-title {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: 18px;
-                color: #fff;
+                color: #0a2d8f;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 margin-bottom: 12px;
@@ -1676,14 +1679,14 @@ const PhotographyBanner: React.FC = () => {
               .finmodel-card-text {
                 font-family: "Inter", sans-serif;
                 font-size: 15px;
-                color: rgba(255,255,255,0.65);
+                color: #555;
                 line-height: 1.8;
               }
-              .finmodel-card-text strong { color: #fff; }
+              .finmodel-card-text strong { color: #1a1a2e; }
               .finmodel-trend {
                 margin-top: 48px;
-                background: rgba(227,0,15,0.1);
-                border: 1px solid rgba(227,0,15,0.3);
+                background: rgba(10,45,143,0.06);
+                border: 1px solid rgba(10,45,143,0.15);
                 border-radius: 20px;
                 padding: 32px 36px;
                 display: flex;
@@ -1695,7 +1698,7 @@ const PhotographyBanner: React.FC = () => {
                 font-family: "Montserrat", sans-serif;
                 font-size: 18px;
                 font-weight: 600;
-                color: #fff;
+                color: #1a1a2e;
                 line-height: 1.6;
               }
               .finmodel-trend-text span { color: #e3000f; }
