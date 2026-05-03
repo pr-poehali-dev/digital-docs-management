@@ -43,6 +43,17 @@ const Header: React.FC = () => {
           text-transform: uppercase;
           letter-spacing: 1px;
           line-height: 1.2;
+          transition: transform 0.3s ease;
+        }
+        .header-logo:hover {
+          transform: translateY(-2px);
+        }
+        .header-logo svg {
+          transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+          border-radius: 10px;
+        }
+        .header-logo:hover svg {
+          transform: rotate(-6deg) scale(1.1);
         }
         .header-logo span {
           color: #e3000f;
@@ -60,10 +71,12 @@ const Header: React.FC = () => {
           text-decoration: none;
           text-transform: uppercase;
           letter-spacing: 1px;
-          transition: color 0.2s ease;
+          transition: color 0.2s ease, transform 0.2s ease;
+          display: inline-block;
         }
         .header-nav a:hover {
           color: #0a2d8f;
+          transform: translateY(-2px);
         }
         .header-cta {
           font-family: "Montserrat", sans-serif;

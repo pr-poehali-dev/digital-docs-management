@@ -131,6 +131,19 @@ export default function Footer() {
           align-items: center;
           gap: 15px;
           margin-bottom: 30px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+        }
+        .brand-logo:hover {
+          transform: translateY(-3px);
+        }
+        .brand-logo svg {
+          transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+          border-radius: 10px;
+        }
+        .brand-logo:hover svg {
+          transform: rotate(-6deg) scale(1.1);
+          box-shadow: 0 8px 24px rgba(10,45,143,0.2);
         }
 
         .brand-icon {
@@ -220,14 +233,15 @@ export default function Footer() {
           font-size: 14px;
           color: #555;
           text-decoration: none;
-          transition: color 0.3s ease;
-          display: flex;
+          transition: color 0.2s ease, transform 0.2s ease;
+          display: inline-flex;
           align-items: center;
           gap: 8px;
         }
 
         .link-item a:hover {
           color: #0a2d8f;
+          transform: translateX(4px);
         }
 
         .contact-item {
