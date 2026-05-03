@@ -110,6 +110,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .left-part h1 .d-flex {
+          font-size: clamp(28px, 6vw, 80px);
           display: flex;
           align-items: center;
         }
