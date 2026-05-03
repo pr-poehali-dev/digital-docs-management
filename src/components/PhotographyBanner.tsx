@@ -837,7 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Практическая академия для предпринимателей: от идеи до прибыльного пансионата для пожилых — пошагово, с наставником
+                Быстро и эффективно поможем открыть высокодоходный социальный бизнес — пансионат для пожилых в любом городе страны.
+              </p>
+              <p style={{ color: "#d33682", fontFamily: "Montserrat", fontWeight: 700, fontSize: "20px", margin: "16px 0 0", letterSpacing: "0.5px" }}>
+                8-900-055-40-45
               </p>
               <a href="#cta" className="book-link">
                 <span className="linktext tracking-tighter text-3xl">Записаться на курс</span>
