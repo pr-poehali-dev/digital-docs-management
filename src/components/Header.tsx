@@ -7,8 +7,15 @@ const Header: React.FC = () => {
   const [formData, setFormData] = useState({ fio: '', phone: '', email: '' })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    try {
+      await fetch('https://functions.poehali.dev/cd4414de-0e80-429f-ad12-caeca9849eb1', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, source: 'Шапка сайта' })
+      })
+    } catch (err) { console.error(err) }
     setSubmitted(true)
     setTimeout(() => {
       setShowModal(false)
