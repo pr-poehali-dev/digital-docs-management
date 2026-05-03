@@ -31,7 +31,9 @@ const HeroSlider: React.FC = () => {
           left: 50%;
           transform: translate(-50%, -50%);
           width: 80%;
-          height: auto;
+          height: 70%;
+          object-fit: cover;
+          object-position: center;
           z-index: 2;
           border-radius: 12px;
           opacity: 0.9;
