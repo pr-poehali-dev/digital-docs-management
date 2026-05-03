@@ -115,10 +115,7 @@ const PhotographyBanner: React.FC = () => {
           font-size: clamp(48px, 9vw, 120px);
           display: flex;
           align-items: center;
-          background: linear-gradient(90deg, #1a56db, #06b6d4);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
+          color: #1a56db;
         }
 
         .left-part h1 .char {
