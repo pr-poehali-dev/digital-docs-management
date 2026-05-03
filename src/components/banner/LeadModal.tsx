@@ -72,7 +72,8 @@ const LeadModal: React.FC<LeadModalProps> = ({ formData, submitted, onClose, onS
               <label style={{display:'flex', alignItems:'flex-start', gap:'10px', cursor:'pointer'}}>
                 <input required type="checkbox" style={{marginTop:'3px', width:'16px', height:'16px', flexShrink:0, accentColor:'#0a2d8f', cursor:'pointer'}} />
                 <span style={{fontSize:'12px', color:'#777', lineHeight:'1.5'}}>
-                  Даю добровольное согласие на обработку персональных данных в соответствии с ФЗ № 152 и политикой конфиденциальности
+                  Даю добровольное согласие на обработку персональных данных в соответствии с ФЗ № 152 и{' '}
+                  <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{color:'#0a2d8f', textDecoration:'underline'}}>политикой конфиденциальности</a>
                 </span>
               </label>
               <button
