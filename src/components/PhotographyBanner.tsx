@@ -1344,7 +1344,7 @@ const PhotographyBanner: React.FC = () => {
               <div>
                 <div className="founder-label">О нас</div>
                 <h2 className="founder-title"><span>Маньянов Ринат Хамитович</span></h2>
-                <div className="founder-role">Основатель и руководитель</div>
+                <div className="founder-role">Основатель и руководитель пансионата для пожилых и инвалидов "До 100 лет"</div>
                 <p className="founder-text">
                   Ринат Хамитович — человек, который превратил заботу о пожилых людях в настоящее призвание. Более <strong style={{color:'#e3000f', fontSize:'1.25em'}}>10 лет</strong> он строит социальный бизнес, который меняет жизни.
                 </p>
