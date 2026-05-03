@@ -5,6 +5,19 @@ const PhotographyBanner: React.FC = () => {
   const [currentText, setCurrentText] = useState("")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+  const [formData, setFormData] = useState({ fio: '', phone: '', email: '' })
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setSubmitted(true)
+    setTimeout(() => {
+      setShowModal(false)
+      setSubmitted(false)
+      setFormData({ fio: '', phone: '', email: '' })
+    }, 2000)
+  }
 
   const texts = ["ПАНСИОНАТ", "БИЗНЕС"]
 
@@ -1281,7 +1294,7 @@ const PhotographyBanner: React.FC = () => {
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Проведём обучение Вашего персонала</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Подготовим весь пакет внутренней документации и поможем открыть свой собственный пансионат</li>
                   </ul>
-                  <a href="#" className="pricing-btn">Оставить заявку</a>
+                  <button onClick={() => setShowModal(true)} className="pricing-btn">Оставить заявку</button>
                 </div>
                 <div className="pricing-card premium">
                   <div className="pricing-badge">Хит</div>
@@ -1307,7 +1320,7 @@ const PhotographyBanner: React.FC = () => {
                       <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Еженедельные онлайн видео-общения с руководителем</li>
                     </ul>
                   </div>
-                  <a href="#" className="pricing-btn">Оставить заявку</a>
+                  <button onClick={() => setShowModal(true)} className="pricing-btn">Оставить заявку</button>
                 </div>
               </div>
             </div>
@@ -1315,6 +1328,42 @@ const PhotographyBanner: React.FC = () => {
 
         </main>
       </div>
+
+      {showModal && (
+        <div onClick={() => setShowModal(false)} style={{position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:9999, display:'flex', alignItems:'center', justifyContent:'center', padding:'20px'}}>
+          <div onClick={e => e.stopPropagation()} style={{background:'#fff', borderRadius:'20px', padding:'40px', maxWidth:'460px', width:'100%', boxShadow:'0 20px 60px rgba(0,0,0,0.3)'}}>
+            {submitted ? (
+              <div style={{textAlign:'center', padding:'20px 0'}}>
+                <div style={{fontSize:'48px', marginBottom:'16px'}}>✅</div>
+                <div style={{fontFamily:"'Cormorant Garamond', serif", fontSize:'24px', fontWeight:700, color:'#1a5c2e'}}>Заявка отправлена!</div>
+                <div style={{marginTop:'8px', color:'#666', fontSize:'15px'}}>Мы свяжемся с вами в ближайшее время</div>
+              </div>
+            ) : (
+              <>
+                <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'28px'}}>
+                  <h3 style={{fontFamily:"'Cormorant Garamond', serif", fontSize:'28px', fontWeight:700, color:'#0a2d8f', margin:0}}>Оставить заявку</h3>
+                  <button onClick={() => setShowModal(false)} style={{background:'none', border:'none', fontSize:'24px', cursor:'pointer', color:'#999', lineHeight:1}}>×</button>
+                </div>
+                <form onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>ФИО</label>
+                    <input required value={formData.fio} onChange={e => setFormData({...formData, fio: e.target.value})} placeholder="Иванов Иван Иванович" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>Телефон</label>
+                    <input required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="+7 (___) ___-__-__" type="tel" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>E-mail</label>
+                    <input required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <button type="submit" style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'17px', fontWeight:700, cursor:'pointer', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'1px'}}>Отправить</button>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </>
   )
 }
