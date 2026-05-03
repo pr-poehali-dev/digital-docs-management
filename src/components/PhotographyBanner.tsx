@@ -1353,7 +1353,7 @@ const PhotographyBanner: React.FC = () => {
                 </p>
                 <div className="founder-badge">
                   <span className="founder-badge-icon">🏆</span>
-                  <span className="founder-badge-text">Более 10 лет в сфере пансионатов</span>
+                  <span className="founder-badge-text">Более 10 лет в социальной сфере</span>
                 </div>
               </div>
               <div className="founder-video-wrap">
