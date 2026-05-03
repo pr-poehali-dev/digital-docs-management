@@ -3,6 +3,19 @@ import { useState } from "react"
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+  const [formData, setFormData] = useState({ fio: '', phone: '', email: '' })
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setSubmitted(true)
+    setTimeout(() => {
+      setShowModal(false)
+      setSubmitted(false)
+      setFormData({ fio: '', phone: '', email: '' })
+    }, 2500)
+  }
 
   const links = [
     { label: "Главная", href: "#" },
@@ -158,7 +171,7 @@ const Header: React.FC = () => {
             {links.map(l => (
               <a key={l.label} href={l.href}>{l.label}</a>
             ))}
-            <a href="#cta" className="header-cta">Оставить заявку</a>
+            <button onClick={() => setShowModal(true)} className="header-cta" style={{cursor:'pointer', border:'none'}}>Оставить заявку</button>
           </nav>
           <button className="header-burger" onClick={() => setMenuOpen(v => !v)} aria-label="Меню">
             <span style={menuOpen ? {transform:'rotate(45deg) translate(5px,5px)'} : {}}></span>
@@ -170,10 +183,46 @@ const Header: React.FC = () => {
           {links.map(l => (
             <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)}>{l.label}</a>
           ))}
-          <a href="#cta" onClick={() => setMenuOpen(false)} style={{color:'#0a2d8f', fontWeight:700}}>Оставить заявку</a>
+          <button onClick={() => { setMenuOpen(false); setShowModal(true) }} style={{fontFamily:"'Montserrat',sans-serif", fontSize:'14px', fontWeight:700, color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'1px', padding:'12px 0', border:'none', background:'none', cursor:'pointer', textAlign:'left'}}>Оставить заявку</button>
         </div>
       </header>
       <div style={{height: '68px'}} />
+
+      {showModal && (
+        <div onClick={() => setShowModal(false)} style={{position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:9999, display:'flex', alignItems:'center', justifyContent:'center', padding:'20px'}}>
+          <div onClick={e => e.stopPropagation()} style={{background:'#fff', borderRadius:'20px', padding:'40px', maxWidth:'460px', width:'100%', boxShadow:'0 20px 60px rgba(0,0,0,0.3)'}}>
+            {submitted ? (
+              <div style={{textAlign:'center', padding:'20px 0'}}>
+                <div style={{fontSize:'48px', marginBottom:'16px'}}>✅</div>
+                <div style={{fontFamily:"'Montserrat',sans-serif", fontSize:'22px', fontWeight:700, color:'#0a2d8f'}}>Заявка отправлена!</div>
+                <div style={{marginTop:'8px', color:'#666', fontSize:'15px'}}>Мы свяжемся с вами в ближайшее время</div>
+              </div>
+            ) : (
+              <>
+                <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'28px'}}>
+                  <h3 style={{fontFamily:"'Montserrat',sans-serif", fontSize:'22px', fontWeight:700, color:'#0a2d8f', margin:0, textTransform:'uppercase', letterSpacing:'1px'}}>Оставить заявку</h3>
+                  <button onClick={() => setShowModal(false)} style={{background:'none', border:'none', fontSize:'24px', cursor:'pointer', color:'#999', lineHeight:1}}>×</button>
+                </div>
+                <form onSubmit={handleSubmit} style={{display:'flex', flexDirection:'column', gap:'16px'}}>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>ФИО</label>
+                    <input required value={formData.fio} onChange={e => setFormData({...formData, fio: e.target.value})} placeholder="Иванов Иван Иванович" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>Телефон</label>
+                    <input required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} placeholder="+7 (___) ___-__-__" type="tel" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <div>
+                    <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>E-mail</label>
+                    <input required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                  </div>
+                  <button type="submit" style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'16px', fontWeight:700, cursor:'pointer', fontFamily:"'Montserrat',sans-serif", letterSpacing:'1px', textTransform:'uppercase'}}>Отправить</button>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      )}
     </>
   )
 }
