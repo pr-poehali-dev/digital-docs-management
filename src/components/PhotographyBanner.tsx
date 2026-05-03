@@ -1264,7 +1264,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="founder-container">
               <div>
                 <div className="founder-label">О руководителе</div>
-                <h2 className="founder-title">Маньянов Ринат <span>Хамитович</span></h2>
+                <h2 className="founder-title"><span>Маньянов Ринат Хамитович</span></h2>
                 <div className="founder-role">Основатель и руководитель</div>
                 <p className="founder-text">
                   Ринат Хамитович — создатель и идейный вдохновитель компании. Более <strong style={{color:'#0a2d8f'}}>10 лет</strong> он посвятил развитию социального бизнеса в сфере ухода за пожилыми людьми.
