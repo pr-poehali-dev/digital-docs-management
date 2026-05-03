@@ -1270,7 +1270,7 @@ const PhotographyBanner: React.FC = () => {
                   <div className="pricing-name">Базовый</div>
                   <div className="pricing-sub">Минимум</div>
                   <div className="pricing-price">1 200 000 <span className="pricing-currency">руб.</span></div>
-                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'inherit', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:500}}>
+                  <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#e87722', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Сделаем подробный бизнес план</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Оценим финансовые вложения и прогнозируем прибыль</li>
                     <li style={{display:'flex', alignItems:'flex-start', gap:'8px'}}><span style={{marginTop:'4px', flexShrink:0}}>✦</span>Разработаем уникальное торговое предложение (что сделает Ваш пансионат особенным и привлекательным)</li>
