@@ -37,6 +37,12 @@ const StepsSection: React.FC = () => {
           position: relative;
           box-shadow: 0 4px 24px rgba(10,45,143,0.07);
           border-top: 4px solid #1a56db;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: default;
+        }
+        .step-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 16px 48px rgba(10,45,143,0.15);
         }
         .step-number {
           font-family: "Montserrat", sans-serif;

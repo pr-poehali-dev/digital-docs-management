@@ -14,7 +14,30 @@ interface LeadModalProps {
   onChangeFormData: (data: FormData) => void
 }
 
+const inputStyle: React.CSSProperties = {
+  width: '100%',
+  padding: '12px 16px',
+  borderRadius: '10px',
+  border: '1.5px solid #ddd',
+  fontSize: '16px',
+  outline: 'none',
+  boxSizing: 'border-box',
+  fontFamily: 'inherit',
+  transition: 'border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease',
+}
+
 const LeadModal: React.FC<LeadModalProps> = ({ formData, submitted, onClose, onSubmit, onChangeFormData }) => {
+  const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
+    e.target.style.borderColor = '#0a2d8f'
+    e.target.style.boxShadow = '0 0 0 3px rgba(10,45,143,0.1)'
+    e.target.style.transform = 'translateY(-1px)'
+  }
+  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    e.target.style.borderColor = '#ddd'
+    e.target.style.boxShadow = 'none'
+    e.target.style.transform = 'translateY(0)'
+  }
+
   return (
     <div onClick={onClose} style={{position:'fixed', inset:0, background:'rgba(0,0,0,0.6)', zIndex:9999, display:'flex', alignItems:'center', justifyContent:'center', padding:'20px'}}>
       <div onClick={e => e.stopPropagation()} style={{background:'#fff', borderRadius:'20px', padding:'40px', maxWidth:'460px', width:'100%', boxShadow:'0 20px 60px rgba(0,0,0,0.3)'}}>
@@ -28,20 +51,23 @@ const LeadModal: React.FC<LeadModalProps> = ({ formData, submitted, onClose, onS
           <>
             <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:'28px'}}>
               <h3 style={{fontFamily:"'Cormorant Garamond', serif", fontSize:'28px', fontWeight:700, color:'#0a2d8f', margin:0}}>Оставить заявку</h3>
-              <button onClick={onClose} style={{background:'none', border:'none', fontSize:'24px', cursor:'pointer', color:'#999', lineHeight:1}}>×</button>
+              <button onClick={onClose} style={{background:'none', border:'none', fontSize:'24px', cursor:'pointer', color:'#999', lineHeight:1, transition:'color 0.2s ease'}}
+                onMouseEnter={e => (e.currentTarget.style.color = '#333')}
+                onMouseLeave={e => (e.currentTarget.style.color = '#999')}
+              >×</button>
             </div>
             <form onSubmit={onSubmit} style={{display:'flex', flexDirection:'column', gap:'16px'}}>
               <div>
                 <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>ФИО</label>
-                <input required value={formData.fio} onChange={e => onChangeFormData({...formData, fio: e.target.value})} placeholder="Иванов Иван Иванович" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                <input required value={formData.fio} onChange={e => onChangeFormData({...formData, fio: e.target.value})} placeholder="Иванов Иван Иванович" style={inputStyle} onFocus={handleFocus} onBlur={handleBlur} />
               </div>
               <div>
                 <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>Телефон</label>
-                <input required value={formData.phone} onChange={e => onChangeFormData({...formData, phone: e.target.value})} placeholder="+7 (___) ___-__-__" type="tel" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                <input required value={formData.phone} onChange={e => onChangeFormData({...formData, phone: e.target.value})} placeholder="+7 (___) ___-__-__" type="tel" style={inputStyle} onFocus={handleFocus} onBlur={handleBlur} />
               </div>
               <div>
                 <label style={{display:'block', marginBottom:'6px', fontSize:'13px', fontWeight:600, color:'#555', textTransform:'uppercase', letterSpacing:'1px'}}>E-mail</label>
-                <input required value={formData.email} onChange={e => onChangeFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={{width:'100%', padding:'12px 16px', borderRadius:'10px', border:'1.5px solid #ddd', fontSize:'16px', outline:'none', boxSizing:'border-box', fontFamily:'inherit'}} />
+                <input required value={formData.email} onChange={e => onChangeFormData({...formData, email: e.target.value})} placeholder="example@mail.ru" type="email" style={inputStyle} onFocus={handleFocus} onBlur={handleBlur} />
               </div>
               <label style={{display:'flex', alignItems:'flex-start', gap:'10px', cursor:'pointer'}}>
                 <input required type="checkbox" style={{marginTop:'3px', width:'16px', height:'16px', flexShrink:0, accentColor:'#0a2d8f', cursor:'pointer'}} />
@@ -49,7 +75,12 @@ const LeadModal: React.FC<LeadModalProps> = ({ formData, submitted, onClose, onS
                   Даю добровольное согласие на обработку персональных данных в соответствии с ФЗ № 152 и политикой конфиденциальности
                 </span>
               </label>
-              <button type="submit" style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'17px', fontWeight:700, cursor:'pointer', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'1px'}}>Отправить</button>
+              <button
+                type="submit"
+                style={{marginTop:'8px', padding:'16px', background:'#0a2d8f', color:'#fff', border:'none', borderRadius:'12px', fontSize:'17px', fontWeight:700, cursor:'pointer', fontFamily:"'Cormorant Garamond', serif", letterSpacing:'1px', transition:'background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease'}}
+                onMouseEnter={e => { e.currentTarget.style.background = '#1a56db'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(10,45,143,0.3)' }}
+                onMouseLeave={e => { e.currentTarget.style.background = '#0a2d8f'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
+              >Отправить</button>
             </form>
           </>
         )}

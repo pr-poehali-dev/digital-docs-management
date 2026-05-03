@@ -56,6 +56,12 @@ const PricingSection: React.FC<PricingSectionProps> = ({ onOpenModal }) => {
           padding: 48px 40px;
           position: relative;
           overflow: hidden;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: default;
+        }
+        .pricing-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 24px 60px rgba(10,45,143,0.18);
         }
         .pricing-card.basic {
           background: #fdf9f5;
