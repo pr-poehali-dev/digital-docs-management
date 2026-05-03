@@ -834,7 +834,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["О", "Т", "К", "Р", "О", "Й", " "].map((char, index) => (
+                  {["О", "Т", "К", "Р", "О", "Й", "Т", "Е", " "].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
