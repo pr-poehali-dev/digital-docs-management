@@ -79,7 +79,7 @@ export default function Footer() {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.3;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(140px);
           height: 60%;
           width: 50%;
@@ -133,7 +133,7 @@ export default function Footer() {
         .brand-icon {
           width: 50px;
           height: 50px;
-          background: #d33682;
+          background: #e3000f;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -169,19 +169,19 @@ export default function Footer() {
         .social-link {
           width: 45px;
           height: 45px;
-          background: rgba(211, 54, 130, 0.1);
+          background: rgba(227,0,15, 0.1);
           border: 1px solid #333;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #d33682;
+          color: #e3000f;
           text-decoration: none;
           transition: all 0.3s ease;
         }
 
         .social-link:hover {
-          background: #d33682;
+          background: #e3000f;
           color: #002b36;
           transform: translateY(-2px);
         }
@@ -196,7 +196,7 @@ export default function Footer() {
           font-family: "Montserrat", sans-serif;
           font-weight: 700;
           font-size: 16px;
-          color: #d33682;
+          color: #e3000f;
           text-transform: uppercase;
           margin: 0 0 25px;
           letter-spacing: 1px;
@@ -236,7 +236,7 @@ export default function Footer() {
         .contact-icon {
           width: 20px;
           height: 20px;
-          color: #d33682;
+          color: #e3000f;
           flex-shrink: 0;
         }
 
@@ -258,7 +258,7 @@ export default function Footer() {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: #d33682;
+          background: #e3000f;
           border-radius: 50%;
           animation: pulse 2s infinite;
         }
@@ -268,22 +268,22 @@ export default function Footer() {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: #d33682;
+          background: #e3000f;
           border-radius: 50%;
         }
 
         @keyframes pulse {
           0% {
             transform: scale(0.95);
-            box-shadow: 0 0 0 0 rgba(211, 54, 130, 0.7);
+            box-shadow: 0 0 0 0 rgba(227,0,15, 0.7);
           }
           70% {
             transform: scale(1);
-            box-shadow: 0 0 0 10px rgba(211, 54, 130, 0);
+            box-shadow: 0 0 0 10px rgba(227,0,15, 0);
           }
           100% {
             transform: scale(0.95);
-            box-shadow: 0 0 0 0 rgba(211, 54, 130, 0);
+            box-shadow: 0 0 0 0 rgba(227,0,15, 0);
           }
         }
 
@@ -304,7 +304,7 @@ export default function Footer() {
         }
 
         .copyright a {
-          color: #d33682;
+          color: #e3000f;
           text-decoration: none;
           transition: color 0.3s ease;
         }

@@ -88,7 +88,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(162px);
           height: 35%;
           width: 55%;
@@ -220,7 +220,7 @@ const PhotographyBanner: React.FC = () => {
         .book-link .arrow::after {
           position: absolute;
           content: "";
-          background-color: #d33682;
+          background-color: #e3000f;
           transition: all ease-in-out 0.35s;
           transform-origin: 0 0;
           border-radius: 30px;
@@ -249,7 +249,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .book-link .arrow span {
-          background-color: #d33682;
+          background-color: #e3000f;
           height: 2px;
           width: 100%;
           display: inline-block;
@@ -264,7 +264,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .book-link .arrow span::before {
-          background-color: #d33682;
+          background-color: #e3000f;
           content: "";
           height: 100%;
           width: 15px;
@@ -289,7 +289,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(112px);
           height: 35%;
           width: 55%;
@@ -520,7 +520,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.3;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(140px);
           height: 40%;
           width: 40%;
@@ -550,7 +550,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .features-content h2 .highlight {
-          color: #d33682;
+          color: #e3000f;
         }
 
         .features-list {
@@ -570,7 +570,7 @@ const PhotographyBanner: React.FC = () => {
         .feature-icon {
           width: 50px;
           height: 50px;
-          background: #d33682;
+          background: #e3000f;
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -608,7 +608,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.4;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(120px);
           height: 50%;
           width: 30%;
@@ -687,7 +687,7 @@ const PhotographyBanner: React.FC = () => {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          background: #d33682;
+          background: #e3000f;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -721,7 +721,7 @@ const PhotographyBanner: React.FC = () => {
           content: "";
           border-radius: 197.5px 0px;
           opacity: 0.6;
-          background: #d33682;
+          background: #e3000f;
           filter: blur(180px);
           height: 60%;
           width: 80%;
@@ -748,7 +748,7 @@ const PhotographyBanner: React.FC = () => {
         }
 
         .cta-subtitle {
-          color: #d33682;
+          color: #e3000f;
           font-family: "Montserrat";
           font-size: 26px;
           line-height: 1.6;
@@ -767,7 +767,7 @@ const PhotographyBanner: React.FC = () => {
 
         .cta-button {
           padding: 18px 40px;
-          background: #d33682;
+          background: #e3000f;
           color: #002b36;
           text-decoration: none;
           font-family: "Montserrat";
@@ -776,12 +776,12 @@ const PhotographyBanner: React.FC = () => {
           text-transform: uppercase;
           border-radius: 50px;
           transition: all 0.3s ease;
-          border: 2px solid #d33682;
+          border: 2px solid #e3000f;
         }
 
         .cta-button:hover {
           background: transparent;
-          color: #d33682;
+          color: #e3000f;
         }
 
         .cta-button.secondary {
@@ -792,8 +792,8 @@ const PhotographyBanner: React.FC = () => {
 
         .cta-button.secondary:hover {
           background: transparent;
-          color: #d33682;
-          border: 2px solid #d33682;
+          color: #e3000f;
+          border: 2px solid #e3000f;
         }
 
         @media screen and (max-width: 1199px) {
@@ -1059,7 +1059,7 @@ const PhotographyBanner: React.FC = () => {
                 line-height: 1;
               }
               .steps-title span {
-                color: #d33682;
+                color: #e3000f;
               }
               .steps-grid {
                 display: grid;
@@ -1145,7 +1145,7 @@ const PhotographyBanner: React.FC = () => {
                 right: -80px;
                 width: 400px;
                 height: 400px;
-                background: rgba(211,54,130,0.1);
+                background: rgba(227,0,15,0.1);
                 border-radius: 50%;
                 filter: blur(80px);
                 z-index: 0;
