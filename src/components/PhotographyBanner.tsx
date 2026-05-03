@@ -1131,7 +1131,10 @@ const PhotographyBanner: React.FC = () => {
             <style>{`
               .founder-section {
                 padding: 100px 30px;
-                background-color: #073642;
+                background-color: #f5f0eb;
+                background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
+                background-size: cover;
+                background-repeat: no-repeat;
                 position: relative;
                 overflow: hidden;
               }
@@ -1142,7 +1145,7 @@ const PhotographyBanner: React.FC = () => {
                 right: -80px;
                 width: 400px;
                 height: 400px;
-                background: rgba(211,54,130,0.15);
+                background: rgba(211,54,130,0.1);
                 border-radius: 50%;
                 filter: blur(80px);
                 z-index: 0;
@@ -1163,25 +1166,25 @@ const PhotographyBanner: React.FC = () => {
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 3px;
-                color: #d33682;
+                color: #e3000f;
                 margin-bottom: 20px;
               }
               .founder-title {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: clamp(28px, 4vw, 48px);
-                color: #fff;
+                color: #1a1a2e;
                 line-height: 1.1;
                 margin: 0 0 8px;
               }
               .founder-title span {
-                color: #d33682;
+                color: #0a2d8f;
               }
               .founder-role {
                 font-family: "Montserrat", sans-serif;
                 font-size: 15px;
                 font-weight: 600;
-                color: rgba(255,255,255,0.5);
+                color: #888;
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 margin: 0 0 32px;
@@ -1189,7 +1192,7 @@ const PhotographyBanner: React.FC = () => {
               .founder-text {
                 font-family: "Inter", sans-serif;
                 font-size: 16px;
-                color: rgba(255,255,255,0.8);
+                color: #444;
                 line-height: 1.9;
                 margin: 0 0 20px;
               }
@@ -1197,8 +1200,8 @@ const PhotographyBanner: React.FC = () => {
                 display: inline-flex;
                 align-items: center;
                 gap: 12px;
-                background: rgba(211,54,130,0.15);
-                border: 1px solid rgba(211,54,130,0.4);
+                background: rgba(10,45,143,0.07);
+                border: 1px solid rgba(10,45,143,0.2);
                 border-radius: 50px;
                 padding: 12px 24px;
                 margin-top: 8px;
@@ -1210,7 +1213,7 @@ const PhotographyBanner: React.FC = () => {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
                 font-size: 15px;
-                color: #d33682;
+                color: #0a2d8f;
               }
               .founder-video-wrap {
                 position: relative;
@@ -1264,10 +1267,10 @@ const PhotographyBanner: React.FC = () => {
                 <h2 className="founder-title">Маньянов Ринат <span>Хамитович</span></h2>
                 <div className="founder-role">Основатель и руководитель</div>
                 <p className="founder-text">
-                  Ринат Хамитович — создатель и идейный вдохновитель компании. Более <strong style={{color:'#fff'}}>10 лет</strong> он посвятил развитию социального бизнеса в сфере ухода за пожилыми людьми.
+                  Ринат Хамитович — создатель и идейный вдохновитель компании. Более <strong style={{color:'#0a2d8f'}}>10 лет</strong> он посвятил развитию социального бизнеса в сфере ухода за пожилыми людьми.
                 </p>
                 <p className="founder-text">
-                  За это время под его руководством были открыты десятки пансионатов по всей стране. Он лично знает каждый этап запуска — от поиска помещения до первого постояльца — и передаёт этот опыт своим клиентам.
+                  Он лично знает каждый этап запуска — от поиска помещения до первого постояльца — и передаёт этот опыт своим клиентам.
                 </p>
                 <div className="founder-badge">
                   <span className="founder-badge-icon">🏆</span>
