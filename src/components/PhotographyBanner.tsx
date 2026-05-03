@@ -44,7 +44,7 @@ const PhotographyBanner: React.FC = () => {
 
         .photography-banner {
           margin: 0;
-          background-color: #002b36;
+          background-color: #f5f0eb;
           background-image: url("https://www.yudiz.com/codepen/photography-banner/frame.png");
           background-size: cover;
           background-repeat: no-repeat;
@@ -93,7 +93,7 @@ const PhotographyBanner: React.FC = () => {
 
         .left-part h1 {
           margin: 0;
-          color: #fff;
+          color: #1a1a2e;
           font-family: "Montserrat", sans-serif;
           font-weight: 700;
           font-size: clamp(48px, 12vw, 160px);
@@ -139,7 +139,7 @@ const PhotographyBanner: React.FC = () => {
         .left-part p {
           width: 72%;
           margin: 20px 0 0;
-          color: #fff;
+          color: #333;
           font-size: 16px;
           font-style: normal;
           font-weight: normal;
@@ -154,7 +154,7 @@ const PhotographyBanner: React.FC = () => {
           border: 0;
           font-size: 56px;
           line-height: 1;
-          color: #f1f1f1;
+          color: #1a1a2e;
           letter-spacing: 0.25px;
           text-transform: uppercase;
           font-family: "Montserrat";
@@ -181,7 +181,7 @@ const PhotographyBanner: React.FC = () => {
           bottom: 6px;
           width: 100%;
           height: 3px;
-          background-color: #ffffff;
+          background-color: #1a1a2e;
           transform: scaleX(1);
           transition: transform 250ms ease-in-out;
           transform-origin: 0 0;
