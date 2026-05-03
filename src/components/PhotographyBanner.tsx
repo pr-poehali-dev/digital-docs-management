@@ -875,6 +875,11 @@ const PhotographyBanner: React.FC = () => {
                   style={{ filter: "hue-rotate(280deg) saturate(1.5)" }}
                 />
               </div>
+              <img
+                src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/74c6716c-3908-481a-9f71-a9251f5ac0be.jpg"
+                alt="Пансионат для пожилых"
+                className="hero-image"
+              />
               <div className="bg-dash-circle">
                 <img
                   src="https://www.yudiz.com/codepen/photography-banner/dash-circle.svg"
