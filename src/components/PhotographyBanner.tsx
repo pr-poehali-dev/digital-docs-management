@@ -88,7 +88,7 @@ const PhotographyBanner: React.FC = () => {
 
         .left-part {
           padding: 20px 0 0;
-          overflow: hidden;
+          overflow: visible;
         }
 
         .left-part h1 {
@@ -105,12 +105,14 @@ const PhotographyBanner: React.FC = () => {
         .left-part h1 .text {
           color: #d33682;
           display: block;
-          height: clamp(60px, 8vw, 80px);
-          font-size: clamp(28px, 6vw, 80px);
+          height: clamp(80px, 10vw, 120px);
+          font-size: clamp(48px, 9vw, 120px);
+          white-space: nowrap;
+          overflow: visible;
         }
 
         .left-part h1 .d-flex {
-          font-size: clamp(28px, 6vw, 80px);
+          font-size: clamp(48px, 9vw, 120px);
           display: flex;
           align-items: center;
         }
