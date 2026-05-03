@@ -116,7 +116,7 @@ const PhotographyBanner: React.FC = () => {
           display: flex;
           align-items: center;
           color: #0f2d6b;
-          margin-bottom: -6px;
+          margin-bottom: 16px;
         }
 
         .left-part h1 .char {
