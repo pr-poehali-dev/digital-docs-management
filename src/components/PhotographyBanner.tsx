@@ -841,7 +841,7 @@ const PhotographyBanner: React.FC = () => {
               <p className="tracking-widest">
                 Быстро и эффективно поможем открыть высокодоходный социальный бизнес — пансионат для пожилых в любом городе страны.
               </p>
-              <p style={{ color: "#d33682", fontFamily: "Montserrat", fontWeight: 700, fontSize: "20px", margin: "16px 0 0", letterSpacing: "0.5px" }}>
+              <p style={{ color: "#d33682", fontFamily: "Montserrat", fontWeight: 700, fontSize: "36px", margin: "16px 0 0", letterSpacing: "1px" }}>
                 8-900-055-40-45
               </p>
               <a href="#cta" className="book-link">
