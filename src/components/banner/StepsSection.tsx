@@ -45,6 +45,11 @@ const StepsSection: React.FC = () => {
           color: #e3000f;
           line-height: 1;
           margin-bottom: 16px;
+          display: inline-block;
+          transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .step-card:hover .step-number {
+          transform: translateY(-8px) scale(1.15) rotate(-6deg);
         }
         .step-text {
           font-family: "Montserrat", sans-serif;
