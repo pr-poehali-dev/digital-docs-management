@@ -111,7 +111,7 @@ export default function Footer() {
           z-index: 1;
           max-width: 1400px;
           margin: 0 auto;
-          padding: 80px 30px 30px;
+          padding: 40px 30px 20px;
         }
 
         .footer-grid {
