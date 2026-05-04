@@ -1194,7 +1194,7 @@ const PhotographyBanner: React.FC = () => {
                 </div>
                 <div className="step-card">
                   <div className="step-number">03</div>
-                  <p className="step-text">Заключаем договор, производите оплату</p>
+                  <p className="step-text">Заключаем договор</p>
                 </div>
                 <div className="step-card">
                   <div className="step-number">04</div>
