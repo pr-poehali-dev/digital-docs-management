@@ -1541,7 +1541,7 @@ const PhotographyBanner: React.FC = () => {
               }
             `}</style>
             <div className="pricing-container">
-              <h2 className="pricing-title"><span>Базовый</span> и <span>Персональный</span></h2>
+              <h2 className="pricing-title">Наши <span>тарифы</span></h2>
               <div className="pricing-grid">
                 <div className="pricing-card basic">
                   <div className="pricing-badge">Старт</div>
