@@ -1200,7 +1200,7 @@ const PhotographyBanner: React.FC = () => {
               <h2 className="steps-title">Этапы <span>запуска</span></h2>
               <div className="steps-grid">
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/edea822d-345b-45e2-bd86-4919b2121a90.jpg" alt="Оставляете заявку" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/ebd5eb62-8dd7-40d6-a8ad-21286bfc9b37.jpg" alt="Оставляете заявку" />
                   <div className="step-card-body">
                     <div className="step-number">01</div>
                     <p className="step-text">Оставляете заявку</p>
