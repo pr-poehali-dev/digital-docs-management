@@ -188,7 +188,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ onOpenModal }) => {
           </div>
           <div className="pricing-card premium">
             <div className="pricing-badge">Хит</div>
-            <div className="pricing-name">Роскошный</div>
+            <div className="pricing-name">Персональный</div>
             <div className="pricing-sub">Максимум</div>
             <div className="pricing-price">2 300 000 <span className="pricing-currency">руб.</span></div>
             <ul style={{textAlign:'left', margin:'20px 0', padding:'0', lineHeight:'2', fontSize:'17px', color:'#f5ede0', listStyle:'none', fontFamily:"'Cormorant Garamond', serif", fontWeight:700}}>
