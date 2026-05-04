@@ -1801,6 +1801,12 @@ const PhotographyBanner: React.FC = () => {
                 </div>
               </div>
 
+              <div style={{marginTop:'32px', padding:'20px 28px', background:'rgba(10,45,143,0.06)', borderRadius:'14px', borderLeft:'4px solid #0a2d8f', maxWidth:'860px', margin:'32px auto 0'}}>
+                <p style={{fontFamily:"'Montserrat',sans-serif", fontSize:'13px', color:'#555', margin:0, lineHeight:1.7}}>
+                  <strong style={{color:'#0a2d8f'}}>Источники данных:</strong> Федеральная служба государственной статистики (Росстат) — демографические показатели и динамика старения населения РФ; Министерство труда и социальной защиты РФ — данные о потребности в стационарном уходе; Агентство стратегических инициатив (АСИ) — оценки рынка социального предпринимательства; Фонд «Старость в радость» — данные о дефиците мест в учреждениях по уходу за пожилыми.
+                </p>
+              </div>
+
               <div style={{marginTop:'60px', background:'#fff', borderRadius:'24px', padding:'48px 40px', boxShadow:'0 8px 40px rgba(10,45,143,0.08)', maxWidth:'560px', margin:'60px auto 0'}}>
                 <h3 style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'22px', color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'1px', marginBottom:'8px', marginTop:0}}>Хочу узнать больше</h3>
                 <p style={{fontFamily:"'Inter',sans-serif", fontSize:'15px', color:'#666', marginBottom:'28px', marginTop:0}}>Оставьте заявку — мы расскажем, как работает финансовая модель именно в вашем городе</p>
