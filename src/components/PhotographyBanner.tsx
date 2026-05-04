@@ -1200,28 +1200,28 @@ const PhotographyBanner: React.FC = () => {
               <h2 className="steps-title">Этапы <span>запуска</span></h2>
               <div className="steps-grid">
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/efe0c9d8-0c8c-4f7d-8e14-908256166c29.jpg" alt="Оставляете заявку" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/edea822d-345b-45e2-bd86-4919b2121a90.jpg" alt="Оставляете заявку" />
                   <div className="step-card-body">
                     <div className="step-number">01</div>
                     <p className="step-text">Оставляете заявку</p>
                   </div>
                 </div>
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/1ef425c5-361f-4a9b-a892-ca1556dc597f.jpg" alt="Специалист связывается" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/fac38271-a9a2-44e1-b35d-e7128803e8b6.jpg" alt="Специалист связывается" />
                   <div className="step-card-body">
                     <div className="step-number">02</div>
                     <p className="step-text">Наш специалист связывается с вами для уточнения деталей</p>
                   </div>
                 </div>
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/881ddba8-363e-4a5c-b8ca-349d467ff2a7.jpg" alt="Заключаем договор" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/05f9a144-2860-4615-b7f8-c478103cd421.jpg" alt="Заключаем договор" />
                   <div className="step-card-body">
                     <div className="step-number">03</div>
                     <p className="step-text">Заключаем договор</p>
                   </div>
                 </div>
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/a95b2a7a-b8c1-4a0c-af78-f4e987ad3bf3.jpg" alt="Исполняем договор" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/c752e4c4-7e86-4847-b128-df407443430a.jpg" alt="Исполняем договор" />
                   <div className="step-card-body">
                     <div className="step-number">04</div>
                     <p className="step-text">Исполняем условия договора</p>
