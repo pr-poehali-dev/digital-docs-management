@@ -174,7 +174,7 @@ const Header: React.FC = () => {
         <div className="header-inner">
           <a href="/" className="header-logo" style={{display:'flex', alignItems:'center', gap:'10px', textDecoration:'none', marginRight:'auto'}}>
             <img src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/bucket/6d165c1d-89d5-4c91-94ee-3c3013c5ea5a.jpg" alt="Логотип" width="38" height="38" style={{objectFit:'contain', borderRadius:'8px'}} />
-            <span style={{display:'flex', flexDirection:'column', gap:'2px'}}>
+            <span style={{display:'flex', flexDirection:'column', gap:'2px', alignItems:'center'}}>
               <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'13px', color:'#0a2d8f', textTransform:'uppercase', letterSpacing:'2px', lineHeight:1}}>Академия</span>
               <span style={{fontFamily:"'Montserrat',sans-serif", fontWeight:700, fontSize:'18px', color:'#e3000f', textTransform:'uppercase', letterSpacing:'1px', lineHeight:1}}>«Как открыть пансионат»</span>
             </span>
