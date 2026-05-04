@@ -48,13 +48,13 @@ const Header: React.FC = () => {
           border-bottom: 1px solid rgba(10,45,143,0.08);
         }
         .header-inner {
-          max-width: 1200px;
-          margin: 0 auto;
+          width: 100%;
           padding: 0 30px;
           height: 68px;
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: flex-start;
+          gap: 32px;
         }
         .header-logo {
           font-family: "Montserrat", sans-serif;
