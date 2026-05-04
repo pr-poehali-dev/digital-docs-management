@@ -1214,7 +1214,7 @@ const PhotographyBanner: React.FC = () => {
                   </div>
                 </div>
                 <div className="step-card">
-                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/aa1adda4-7030-4f1a-a416-5fc09f3f6e4b.jpg" alt="Заключаем договор" />
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/4379b390-5c53-42c9-8937-c0aa047ef563.jpg" alt="Заключаем договор" />
                   <div className="step-card-body">
                     <div className="step-number">03</div>
                     <p className="step-text">Заключаем договор</p>
