@@ -925,7 +925,7 @@ const PhotographyBanner: React.FC = () => {
 
       <div className="photography-banner">
         <main>
-          <section className="info-section">
+          <section className="info-section" id="home">
             <div className="left-part">
               <h1>
                 <span className="d-flex">
@@ -1116,7 +1116,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="steps-section">
+          <section className="steps-section" id="steps">
             <style>{`
               .steps-section {
                 padding: 100px 30px;
@@ -1205,7 +1205,7 @@ const PhotographyBanner: React.FC = () => {
           </section>
 
 
-          <section className="founder-section">
+          <section className="founder-section" id="founder">
             <style>{`
               .founder-section {
                 padding: 100px 30px;
@@ -1365,7 +1365,7 @@ const PhotographyBanner: React.FC = () => {
             </div>
           </section>
 
-          <section className="pricing-section">
+          <section className="pricing-section" id="pricing">
             <style>{`
               .pricing-section {
                 padding: 100px 30px;

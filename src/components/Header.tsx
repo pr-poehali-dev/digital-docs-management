@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   }
 
   const links = [
-    { label: "Главная", href: "#" },
+    { label: "Главная", href: "#home" },
     { label: "О нас", href: "#founder" },
     { label: "Этапы запуска", href: "#steps" },
     { label: "Финансовая модель", href: "#finmodel" },
