@@ -1147,22 +1147,34 @@ const PhotographyBanner: React.FC = () => {
               .step-card {
                 background: #fff;
                 border-radius: 20px;
-                padding: 36px 28px;
+                overflow: hidden;
                 position: relative;
-                box-shadow: 0 4px 24px rgba(10,45,143,0.07);
+                box-shadow: 0 4px 24px rgba(10,45,143,0.15);
                 border-top: 4px solid #1a56db;
+                display: flex;
+                flex-direction: column;
+              }
+              .step-card-img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                display: block;
+              }
+              .step-card-body {
+                padding: 24px 24px 28px;
+                flex: 1;
               }
               .step-number {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 700;
-                font-size: 56px;
+                font-size: 48px;
                 color: #e3000f;
                 line-height: 1;
-                margin-bottom: 16px;
+                margin-bottom: 12px;
               }
               .step-text {
                 font-family: "Montserrat", sans-serif;
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 600;
                 color: #1a1a2e;
                 line-height: 1.6;
@@ -1179,26 +1191,41 @@ const PhotographyBanner: React.FC = () => {
                 .steps-section {
                   padding: 60px 16px;
                 }
+                .step-card-img {
+                  height: 200px;
+                }
               }
             `}</style>
             <div className="steps-container">
               <h2 className="steps-title">Этапы <span>запуска</span></h2>
               <div className="steps-grid">
                 <div className="step-card">
-                  <div className="step-number">01</div>
-                  <p className="step-text">Оставляете заявку</p>
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/efe0c9d8-0c8c-4f7d-8e14-908256166c29.jpg" alt="Оставляете заявку" />
+                  <div className="step-card-body">
+                    <div className="step-number">01</div>
+                    <p className="step-text">Оставляете заявку</p>
+                  </div>
                 </div>
                 <div className="step-card">
-                  <div className="step-number">02</div>
-                  <p className="step-text">Наш специалист связывается с вами для уточнения деталей</p>
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/1ef425c5-361f-4a9b-a892-ca1556dc597f.jpg" alt="Специалист связывается" />
+                  <div className="step-card-body">
+                    <div className="step-number">02</div>
+                    <p className="step-text">Наш специалист связывается с вами для уточнения деталей</p>
+                  </div>
                 </div>
                 <div className="step-card">
-                  <div className="step-number">03</div>
-                  <p className="step-text">Заключаем договор</p>
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/881ddba8-363e-4a5c-b8ca-349d467ff2a7.jpg" alt="Заключаем договор" />
+                  <div className="step-card-body">
+                    <div className="step-number">03</div>
+                    <p className="step-text">Заключаем договор</p>
+                  </div>
                 </div>
                 <div className="step-card">
-                  <div className="step-number">04</div>
-                  <p className="step-text">Исполняем условия договора</p>
+                  <img className="step-card-img" src="https://cdn.poehali.dev/projects/68a6caea-ef68-4431-8bf3-bf4c974f1d77/files/a95b2a7a-b8c1-4a0c-af78-f4e987ad3bf3.jpg" alt="Исполняем договор" />
+                  <div className="step-card-body">
+                    <div className="step-number">04</div>
+                    <p className="step-text">Исполняем условия договора</p>
+                  </div>
                 </div>
               </div>
             </div>
